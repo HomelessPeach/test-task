@@ -9,12 +9,12 @@ class BookService {
     }
 
     static async createBook(bookData, transaction) {
-        const clearBookData = BookService.clearBookData(bookData);
+        const clearBookData = this.clearBookData(bookData);
         await BookDatabaseService.createBook(clearBookData, transaction);
     }
 
     static async updateBook(bookId, bookData, transaction) {
-        const clearBookData = BookService.clearBookData(bookData);
+        const clearBookData = this.clearBookData(bookData);
         await BookDatabaseService.updateBook(bookId, clearBookData, transaction);
     }
 
