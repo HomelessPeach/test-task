@@ -4,6 +4,10 @@
 
 ### `git clone https://github.com/HomelessPeach/test-task.git`
 
+Клонируйте проект, а затем перейдите в него
+
+### `cd test-task`
+
 *********
 
 ### 2. Сборка клиентской части приложения.
